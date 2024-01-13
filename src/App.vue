@@ -1,39 +1,37 @@
 <template>
   <div class="wrapper">
-    <div>
-      <TopHeader />
-      <NavbarMenu />
-    </div>
+    <HeaderComponent />
     <PageTitle />
     <CTAComponent />
     <ProudOf />
     <AboutComponent />
     <OurTeam />
     <BenefitComponent />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import TopHeader from './components/Header/TopHeader.vue'
-import NavbarMenu from './components/Header/NavbarMenu.vue'
+import HeaderComponent from './components/Header/HeaderComponent.vue'
 import PageTitle from './components/PageTitle.vue'
 import CTAComponent from './components/CTAComponent.vue'
 import ProudOf from './components/ProudOf/ProudOf.vue'
 import AboutComponent from './components/AboutComponent.vue'
 import OurTeam from './components/OurTeam/OurTeam.vue'
 import BenefitComponent from './components/BenefitComponent/BenefitComponent.vue'
+import FooterComponent from './components/Footer/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    TopHeader,
-    NavbarMenu,
+    HeaderComponent,
     PageTitle,
     CTAComponent,
     ProudOf,
     AboutComponent,
     OurTeam,
-    BenefitComponent
+    BenefitComponent,
+    FooterComponent
   }
 }
 </script>
@@ -80,5 +78,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  padding-bottom: 27px;
 }
 </style>
