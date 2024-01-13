@@ -1,26 +1,84 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <div>
+      <TopHeader />
+      <NavbarMenu />
+    </div>
+    <PageTitle />
+    <CTAComponent />
+    <ProudOf />
+    <AboutComponent />
+    <OurTeam />
+    <BenefitComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopHeader from './components/Header/TopHeader.vue'
+import NavbarMenu from './components/Header/NavbarMenu.vue'
+import PageTitle from './components/PageTitle.vue'
+import CTAComponent from './components/CTAComponent.vue'
+import ProudOf from './components/ProudOf/ProudOf.vue'
+import AboutComponent from './components/AboutComponent.vue'
+import OurTeam from './components/OurTeam/OurTeam.vue'
+import BenefitComponent from './components/BenefitComponent/BenefitComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopHeader,
+    NavbarMenu,
+    PageTitle,
+    CTAComponent,
+    ProudOf,
+    AboutComponent,
+    OurTeam,
+    BenefitComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1410px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 </style>
