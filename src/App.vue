@@ -37,12 +37,17 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html {
   box-sizing: border-box;
 }
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
 }
 *,
 *:before,
